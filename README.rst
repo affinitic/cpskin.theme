@@ -1,4 +1,6 @@
-cpskin.theme
+.. contents::
+
+Introduction
 ============
 
 Theme package for cpskin
