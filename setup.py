@@ -38,6 +38,8 @@ setup(name='cpskin.theme',
       install_requires=[
           'setuptools',
           'Plone',
+          'cpskin.core',
+          'cpskin.locales'
           # -*- Extra requirements: -*-
       ],
       entry_points={},
