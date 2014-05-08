@@ -1,7 +1,16 @@
-<configure xmlns="http://namespaces.zope.org/zope">
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:plone="http://namespaces.plone.org/plone">
 
-  <!-- Dependencies -->
-  <include package="cpskin.core" />
-  <include package="cpskin.locales" />
+    <!-- Dependencies -->
+    <include package="plone.app.theming" />
+    <include package="diazotheme.frameworks" />
+    <include package="cpskin.core" />
+    <include package="cpskin.locales" />
+
+    <!-- Unregister unused themes -->
+    <includeOverrides file="overrides.zcml" />
+
+    <!-- CPSkin themes -->
+    <plone:static directory="static" name="cpskin" type="theme" />
 
 </configure>

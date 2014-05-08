@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- The condition makes sure that theme is only applied when served in the
+       plone main_template. This is necessary for functional edit popups in
+       Tiny, for example. -->
+  <theme href="++theme++plone/index.html" css:if-content="#visual-portal-wrapper"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="++theme++plone/rules/head/ie-classes.xml"/>
+  <xi:include href="++theme++plone/rules/head/base.xml"/>
+  <xi:include href="++theme++plone/rules/head/theme.xml"/>
+  <xi:include href="++theme++plone/rules/head/icons.xml"/>
+  <xi:include href="++theme++plone/rules/utility/responsify.xml"/>
+
+  <!-- CSS rules
+       ================================================================== -->
+  <after css:theme-children="head">
+      <link rel="stylesheet" href="/++theme++cpskin/css/style.css"/>
+  </after>
+
+
+  <!-- Body rules
+       ================================================================== -->
+
+  <!-- Change the logo in content and the copy the portal-top children -->
+  <xi:include href="++theme++plone/rules/logo/default-56.xml"/>
+  <xi:include href="++theme++plone/rules/utility/structures.xml"/>
+
+  <!-- Copy over the content -->
+  <replace css:theme="body" css:content="body" />
+
+</rules>

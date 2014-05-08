@@ -1,0 +1,40 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:plone="http://namespaces.plone.org/plone">
+
+  <!-- Twitter Bootstrap Framework -->
+  <plone:static directory="empty"
+                name="bootstrap-framework" type="theme" />
+  <plone:static directory="empty"
+                name="bootstrap-hero" type="theme" />
+  <plone:static directory="empty"
+                name="bootstrap-marketing-narrow" type="theme" />
+
+  <!-- Foundation Framework -->
+  <plone:static directory="empty"
+                name="foundation-framework" type="theme" />
+  <plone:static directory="empty"
+                name="foundstyles-bladesofsteel" type="theme" />
+  <plone:static directory="empty"
+                name="foundstyles-coffeenmilk" type="theme" />
+  <plone:static directory="empty"
+                name="foundstyles-evergreen" type="theme" />
+
+  <!-- Goldilocks Framework -->
+  <plone:static directory="empty"
+                name="goldilocks-framework" type="theme" />
+  <plone:static directory="empty"
+                name="goldilocks-black" type="theme" />
+
+  <!-- Kube Framework -->
+  <plone:static directory="empty"
+                name="kube-framework" type="theme" />
+  <plone:static directory="empty"
+                name="kube-start" type="theme" />
+  <plone:static directory="empty"
+                name="kube-demo" type="theme" />
+
+  <!-- Plone example -->
+  <plone:static directory="empty"
+                name="example" type="theme" />
+
+</configure>
