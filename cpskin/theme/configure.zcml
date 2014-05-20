@@ -7,8 +7,12 @@
     <include package="cpskin.core" />
     <include package="cpskin.locales" />
 
+    <include file="profiles.zcml" />
+
     <!-- Unregister unused themes -->
     <includeOverrides file="overrides.zcml" />
+
+    <include package=".browser" />
 
     <!-- CPSkin themes -->
     <plone:static directory="static" name="cpskin" type="theme" />

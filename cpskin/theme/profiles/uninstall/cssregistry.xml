@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+ <stylesheet id="++resource++cpskin.theme.stylesheets/citizen.css"
+             remove="True" />
+
+</object>
