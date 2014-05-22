@@ -38,6 +38,7 @@ setup(name='cpskin.theme',
       install_requires=[
           'setuptools',
           'Plone',
+          'plone.api',
           'plone.app.theming',
           'diazotheme.frameworks',
           'cpskin.core',
