@@ -4,6 +4,15 @@
            i18n_domain="cpskin">
 
     <genericsetup:registerProfile
+        name="default"
+        title="cpskin.theme"
+        directory="profiles/default"
+        description="Installs CPSkin theme"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="members-configuration"
         title="cpskin.theme: members configuration"
         directory="profiles/members-config"
