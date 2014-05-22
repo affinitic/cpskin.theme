@@ -21,7 +21,7 @@
   <!-- CSS rules
        ================================================================== -->
   <after css:theme-children="head">
-      <link rel="stylesheet" href="/++theme++cpskin/css/style.css"/>
+      <link rel="stylesheet" href="/++theme++cpskin.theme.base/css/style.css"/>
   </after>
 
 

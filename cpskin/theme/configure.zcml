@@ -15,6 +15,6 @@
     <include package=".browser" />
 
     <!-- CPSkin themes -->
-    <plone:static directory="static" name="cpskin" type="theme" />
+    <plone:static directory="static" name="cpskin.theme.base" type="theme" />
 
 </configure>
