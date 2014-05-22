@@ -8,4 +8,13 @@
       directory="resources/stylesheets/"
       layer="..interfaces.ICPSkinThemeWithMembersLayer" />
 
+  <browser:page
+      for="*"
+      name="cpskin_banner.css"
+      class=".banner.BannerView"
+      permission="zope.Public"
+      attribute="getCSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
 </configure>
