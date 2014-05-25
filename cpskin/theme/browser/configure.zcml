@@ -17,4 +17,58 @@
       layer="..interfaces.ICPSkinThemeLayer"
       />
 
+  <browser:page
+      for="*"
+      name="isInTheme"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="isInTheme"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme1.css"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="getTheme1CSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme2.css"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="getTheme2CSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme3.css"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="getTheme3CSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme4.css"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="getTheme4CSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme5.css"
+      class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="getTheme5CSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
 </configure>
