@@ -45,5 +45,8 @@ setup(name='cpskin.theme',
           'cpskin.locales'
           # -*- Extra requirements: -*-
       ],
+      extras_require=dict(
+          test=['plone.app.testing'],
+      ),
       entry_points={},
 )
