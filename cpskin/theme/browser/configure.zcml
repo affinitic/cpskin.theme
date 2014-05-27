@@ -28,8 +28,26 @@
 
   <browser:page
       for="*"
-      name="theme1.css"
+      name="isInATheme"
       class=".themes.ThemesView"
+      permission="zope.Public"
+      attribute="isInATheme"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="homepage.css"
+      class=".css.CSSView"
+      permission="zope.Public"
+      attribute="getHomePageCSS"
+      layer="..interfaces.ICPSkinThemeLayer"
+      />
+
+  <browser:page
+      for="*"
+      name="theme1.css"
+      class=".css.CSSView"
       permission="zope.Public"
       attribute="getTheme1CSS"
       layer="..interfaces.ICPSkinThemeLayer"
@@ -38,7 +56,7 @@
   <browser:page
       for="*"
       name="theme2.css"
-      class=".themes.ThemesView"
+      class=".css.CSSView"
       permission="zope.Public"
       attribute="getTheme2CSS"
       layer="..interfaces.ICPSkinThemeLayer"
@@ -47,7 +65,7 @@
   <browser:page
       for="*"
       name="theme3.css"
-      class=".themes.ThemesView"
+      class=".css.CSSView"
       permission="zope.Public"
       attribute="getTheme3CSS"
       layer="..interfaces.ICPSkinThemeLayer"
@@ -56,7 +74,7 @@
   <browser:page
       for="*"
       name="theme4.css"
-      class=".themes.ThemesView"
+      class=".css.CSSView"
       permission="zope.Public"
       attribute="getTheme4CSS"
       layer="..interfaces.ICPSkinThemeLayer"
@@ -65,7 +83,7 @@
   <browser:page
       for="*"
       name="theme5.css"
-      class=".themes.ThemesView"
+      class=".css.CSSView"
       permission="zope.Public"
       attribute="getTheme5CSS"
       layer="..interfaces.ICPSkinThemeLayer"

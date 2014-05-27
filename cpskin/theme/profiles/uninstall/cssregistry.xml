@@ -7,6 +7,9 @@
  <stylesheet id="++resource++cpskin.theme.stylesheets/citizen.css"
              remove="True" />
 
+ <stylesheet id="++resource++cpskin.theme.stylesheets/homepage.css"
+             remove="True" />
+
  <stylesheet id="++resource++cpskin.theme.stylesheets/theme1.css"
              remove="True" />
 

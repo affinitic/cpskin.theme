@@ -11,12 +11,19 @@
 
  <!-- Each section related styles -->
 
+ <stylesheet title="CPSkin homepage styles"
+    id="homepage.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="python:not context.restrictedTraverse('@@isInATheme')()"
+    insert-after="cpskin_banner.css" />
+
  <stylesheet title="CPSkin theme 1 styles"
     id="theme1.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=1)"
-    insert-after="cpskin_banner.css" />
+    insert-after="homepage.css" />
 
  <stylesheet title="CPSkin theme 2 styles"
     id="theme2.css"

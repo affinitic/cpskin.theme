@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from zope.traversing.interfaces import ITraverser
-from zope.location.interfaces import LocationError
-from plone.app.theming.utils import getCurrentTheme
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
 
@@ -47,34 +44,39 @@ class ThemesView(BrowserView):
             index += 1
         return False
 
-    def getCSS(self, cssName):
+    def isInATheme(self):
         """
-        Returns CSS (depending on theme id) from currently activated theme
+        Returns True if we are currently in a theme
         """
-        request = self.request
-        response = request.response
-        activeTheme = getCurrentTheme()
-        if activeTheme is None:
-            return
-        filePath = "++theme++%s/css/%s" % (activeTheme, cssName)
-        try:
-            resource = ITraverser(self.context).traverse(filePath,
-                                                         request=self.request)
-        except LocationError:
-            return
-        return resource(REQUEST=resource, RESPONSE=response)
-
-    def getTheme1CSS(self):
-        return self.getCSS('theme1.css')
-
-    def getTheme2CSS(self):
-        return self.getCSS('theme2.css')
-
-    def getTheme3CSS(self):
-        return self.getCSS('theme3.css')
-
-    def getTheme4CSS(self):
-        return self.getCSS('theme4.css')
-
-    def getTheme5CSS(self):
-        return self.getCSS('theme5.css')
+        context = self.context
+        # Get the right object if we are on a default page
+        portal = getToolByName(context, 'portal_url').getPortalObject()
+        plone_view = portal.restrictedTraverse('@@plone')
+        if plone_view.isDefaultPageInFolder():
+            # if the context is a default page, get the parent!
+            obj = context.aq_inner.aq_parent
+            context = obj
+        # Take the path, traverse to the first level and see if it is a
+        # element respecting the navigation strategy
+        portal_url = getToolByName(context, 'portal_url')
+        contentPath = portal_url.getRelativeContentPath(context)
+        if not len(contentPath):
+            # we are on the home page
+            return False
+        # Use the portal_catalog the get the first level element
+        portal_catalog = getToolByName(context, 'portal_catalog')
+        portal = getToolByName(context, 'portal_url').getPortalObject()
+        queryDict = {}
+        queryDict['path'] = {'query': '/'.join(portal.getPhysicalPath()) + '/' + contentPath[0], 'depth': 0}
+        queryDict['portal_type'] = 'Folder'
+        brains = portal_catalog(queryDict)
+        if not brains:
+            return False
+        brain = brains[0]
+        navtreeProps = getToolByName(context, 'portal_properties').navtree_properties
+        if not brain.meta_type in navtreeProps.metaTypesNotToList and \
+           (brain.review_state in navtreeProps.wf_states_to_show or \
+            not navtreeProps.enable_wf_state_filtering) and \
+           not brain.id in navtreeProps.idsNotToList:
+            return True
+        return False
