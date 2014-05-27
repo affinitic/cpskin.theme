@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <replace css:content-children="#portaltab-index_html a">
+      <img src="++theme++cpskin.theme.base/images/home.png" alt="Home" />
+  </replace>
+
+</rules>
