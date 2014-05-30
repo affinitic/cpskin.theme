@@ -16,13 +16,13 @@ class CSSView(BrowserView):
         response = request.response
         activeTheme = getCurrentTheme()
         if activeTheme is None:
-            return
+            return ""
         filePath = "++theme++%s/css/%s" % (activeTheme, cssName)
         try:
             resource = ITraverser(self.context).traverse(filePath,
                                                          request=self.request)
         except LocationError:
-            return
+            return ""
         return resource(REQUEST=resource, RESPONSE=response)
 
     def getHomePageCSS(self):
