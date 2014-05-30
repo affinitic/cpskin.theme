@@ -10,15 +10,6 @@
 
   <browser:page
       for="*"
-      name="cpskin_banner.css"
-      class=".banner.BannerView"
-      permission="zope.Public"
-      attribute="getCSS"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
       name="isInTheme"
       class=".themes.ThemesView"
       permission="zope.Public"
