@@ -16,5 +16,6 @@
 
     <!-- CPSkin themes -->
     <plone:static directory="static" name="cpskin.theme.base" type="theme" />
+    <plone:static directory="training" name="cpskin.theme.training" type="theme" />
 
 </configure>
