@@ -10,4 +10,25 @@
       </img>
   </replace>
 
+  <replace css:content-children="#portal-header">
+      <div id="top-actions">
+        <div id="top-actions-inner">
+          <xsl:copy-of select="//*[@id='portal-siteactions']" />
+          <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+        </div>
+      </div>
+      <div id="top-search-logo">
+        <div id="top-search-logo-inner">
+          <xsl:copy-of select="./*[@id='portal-logo']"/>
+          <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+        </div>
+      </div>
+      <div id="top-navigation">
+        <div id="top-navigation-inner">
+          <xsl:copy-of select="./*[@id!='portal-personaltools-wrapper' and @id!='portal-logo' and @id!='portal-searchbox']"/>
+        </div>
+      </div>
+  </replace>
+  <drop css:content="#portal-siteactions" />
+
 </rules>
