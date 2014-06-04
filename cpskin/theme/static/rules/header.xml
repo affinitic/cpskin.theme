@@ -13,8 +13,9 @@
   <replace css:content-children="#portal-header">
       <div id="top-actions">
         <div id="top-actions-inner">
-          <xsl:copy-of select="//*[@id='portal-siteactions']" />
+          <xsl:copy-of select="./*[@id='social-viewlet']" />
           <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+          <xsl:copy-of select="//*[@id='portal-siteactions']" />
         </div>
       </div>
       <div id="top-search-logo">
@@ -25,7 +26,10 @@
       </div>
       <div id="top-navigation">
         <div id="top-navigation-inner">
-          <xsl:copy-of select="./*[not(@id) or (@id!='portal-personaltools-wrapper' and @id!='portal-logo' and @id!='portal-searchbox')]"/>
+          <xsl:copy-of select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
+                                            and @id!='portal-logo'
+                                            and @id!='portal-searchbox'
+                                            and @id!='social-viewlet')]"/>
         </div>
       </div>
   </replace>
