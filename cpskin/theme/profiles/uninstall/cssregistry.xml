@@ -22,4 +22,7 @@
  <stylesheet id="++resource++cpskin.theme.stylesheets/theme5.css"
              remove="True" />
 
+ <stylesheet id="++theme++cpskin.theme.base/css/iconmoon.css"
+             remove="True" />
+
 </object>
