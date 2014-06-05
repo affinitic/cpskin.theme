@@ -10,7 +10,7 @@ class CSSView(BrowserView):
 
     def getCSS(self, cssName):
         """
-        Returns CSS (depending on theme id) from currently activated theme
+        Returns specified CSS from currently activated theme
         """
         request = self.request
         response = request.response
@@ -25,20 +25,8 @@ class CSSView(BrowserView):
             return ""
         return resource(REQUEST=resource, RESPONSE=response)
 
-    def getHomePageCSS(self):
-        return self.getCSS('homepage.css')
+    def getStylesCSS(self):
+        return self.getCSS('styles.css')
 
-    def getTheme1CSS(self):
-        return self.getCSS('theme1.css')
-
-    def getTheme2CSS(self):
-        return self.getCSS('theme2.css')
-
-    def getTheme3CSS(self):
-        return self.getCSS('theme3.css')
-
-    def getTheme4CSS(self):
-        return self.getCSS('theme4.css')
-
-    def getTheme5CSS(self):
-        return self.getCSS('theme5.css')
+    def getFontsCSS(self):
+        return self.getCSS('fonts.css')

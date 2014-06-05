@@ -1,54 +1,18 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
- <!-- Each section related styles -->
-
- <stylesheet title="CPSkin homepage styles"
-    id="homepage.css"
+ <stylesheet title="CPSkin styles"
+    id="styles.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:not context.restrictedTraverse('@@isInATheme')()"
-    insert-after="ploneCustom.css" />
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="ploneCustom.css" />
 
- <stylesheet title="CPSkin theme 1 styles"
-    id="theme1.css"
+ <stylesheet title="CPSkin fonts"
+    id="fonts.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=1)"
-    insert-after="homepage.css" />
-
- <stylesheet title="CPSkin theme 2 styles"
-    id="theme2.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=2)"
-    insert-after="theme1.css" />
-
- <stylesheet title="CPSkin theme 3 styles"
-    id="theme3.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=3)"
-    insert-after="theme2.css" />
-
- <stylesheet title="CPSkin theme 4 styles"
-    id="theme4.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=4)"
-    insert-after="theme3.css" />
-
- <stylesheet title="CPSkin theme 5 styles"
-    id="theme5.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression="python:context.restrictedTraverse('@@isInTheme')(themeId=5)"
-    insert-after="theme4.css" />
-
- <stylesheet title="Fontello"
-    id="++theme++cpskin.theme.base/css/fontello.css"
-    media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" />
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="styles.css" />
 
 </object>

@@ -10,73 +10,19 @@
 
   <browser:page
       for="*"
-      name="isInTheme"
-      class=".themes.ThemesView"
-      permission="zope.Public"
-      attribute="isInTheme"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="isInATheme"
-      class=".themes.ThemesView"
-      permission="zope.Public"
-      attribute="isInATheme"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="homepage.css"
+      name="fonts.css"
       class=".css.CSSView"
       permission="zope.Public"
-      attribute="getHomePageCSS"
+      attribute="getFontsCSS"
       layer="..interfaces.ICPSkinThemeLayer"
       />
 
   <browser:page
       for="*"
-      name="theme1.css"
+      name="styles.css"
       class=".css.CSSView"
       permission="zope.Public"
-      attribute="getTheme1CSS"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="theme2.css"
-      class=".css.CSSView"
-      permission="zope.Public"
-      attribute="getTheme2CSS"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="theme3.css"
-      class=".css.CSSView"
-      permission="zope.Public"
-      attribute="getTheme3CSS"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="theme4.css"
-      class=".css.CSSView"
-      permission="zope.Public"
-      attribute="getTheme4CSS"
-      layer="..interfaces.ICPSkinThemeLayer"
-      />
-
-  <browser:page
-      for="*"
-      name="theme5.css"
-      class=".css.CSSView"
-      permission="zope.Public"
-      attribute="getTheme5CSS"
+      attribute="getStylesCSS"
       layer="..interfaces.ICPSkinThemeLayer"
       />
 
