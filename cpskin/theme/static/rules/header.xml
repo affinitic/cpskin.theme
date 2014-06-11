@@ -36,9 +36,13 @@
   </replace>
   <drop css:content="#portal-siteactions" />
 
-  <replace css:content-children="#portal-globalnav">
-      <xsl:apply-templates select="./*" />
-      <xsl:copy-of select="//*[@id='toolsbar']/*"/>
+  <replace css:content="#portal-globalnav">
+      <nav id="portal-globalnav">
+          <ul>
+              <xsl:apply-templates select="./*"/>
+              <xsl:copy-of select="//*[@id='toolsbar']/*"/>
+          </ul>
+      </nav>
   </replace>
   <drop css:content="#toolsbar" />
 
