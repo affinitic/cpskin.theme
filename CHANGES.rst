@@ -4,10 +4,10 @@ Changelog
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Show menutools viewlets on mobile (affinitic #5846)
 
 
 0.1 (2014-07-02)
 ----------------
 
-- Nothing changed yet.
+- Initial release
