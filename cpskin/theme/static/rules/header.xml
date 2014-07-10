@@ -25,9 +25,11 @@
           <xsl:copy-of select="./*[@id='portal-searchbox']"/>
         </div>
       </div>
+      <div id="top-toolsbar">
+          <xsl:copy-of select="//*[@id='toolsbar']"/>
+      </div>
       <div id="top-navigation">
         <div id="top-navigation-inner">
-          <xsl:copy-of select="//*[@id='toolsbar']"/>
           <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
                                                         and @id!='portal-logo'
                                                         and @id!='portal-searchbox'

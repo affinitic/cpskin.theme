@@ -1,10 +1,10 @@
-#toolsbar {
+#top-toolsbar {
     display: none;
 }
 
 @media screen and (max-width: 600px)
 {
-    #toolsbar {
+    #top-toolsbar {
         display: block;
     }
 }
