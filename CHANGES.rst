@@ -4,6 +4,8 @@ Changelog
 0.2 (unreleased)
 ----------------
 
+- Handle specific minisite layout for header, banner, breadcrumbs and footer
+  (affinitic #5865)
 - Show menutools viewlets on mobile (affinitic #5846)
 
 

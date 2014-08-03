@@ -10,34 +10,66 @@
       </img>
   </replace>
 
-  <replace css:content-children="#portal-header">
-      <div id="top-actions">
-        <div id="top-actions-inner">
-          <xsl:copy-of select="./*[@id='social-viewlet']" />
-          <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
-          <xsl:copy-of select="//*[@id='portal-siteactions']" />
-          <div class="visualClear"></div>
-        </div>
-      </div>
-      <div id="top-search-logo">
-        <div id="top-search-logo-inner">
-          <xsl:copy-of select="./*[@id='portal-logo']"/>
-          <xsl:copy-of select="./*[@id='portal-searchbox']"/>
-        </div>
-      </div>
-      <div id="top-toolsbar">
-          <xsl:copy-of select="//*[@id='toolsbar']"/>
-      </div>
-      <div id="top-navigation">
-        <div id="top-navigation-inner">
-          <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
-                                                        and @id!='portal-logo'
-                                                        and @id!='portal-searchbox'
-                                                        and @id!='social-viewlet')]"/>
-        </div>
-      </div>
-  </replace>
+
+  <!-- Header / banner specific to minisite mode -->
+  <rules if="$isInMinisiteMode">
+
+      <replace css:content-children="#portal-header">
+          <div id="top-actions" class="minisite">
+            <div id="top-actions-inner" class="minisite">
+            </div>
+          </div>
+      </replace>
+
+      <replace css:content-children="#minisite-search">
+          <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+      </replace>
+
+
+      <drop css:content="#viewlet-above-content #viewlet-minisite" />
+      <drop css:content="#portal-breadcrumbs" />
+
+  </rules>
+
+
+  <!-- Standard Header / banner -->
+  <rules if-not="$isInMinisiteMode">
+
+      <replace css:content-children="#portal-header">
+          <div id="top-actions">
+            <div id="top-actions-inner">
+              <xsl:copy-of select="./*[@id='social-viewlet']" />
+              <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+              <xsl:copy-of select="//*[@id='portal-siteactions']" />
+              <div class="visualClear"></div>
+            </div>
+          </div>
+          <div id="top-search-logo">
+            <div id="top-search-logo-inner">
+              <xsl:copy-of select="./*[@id='portal-logo']"/>
+              <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+            </div>
+          </div>
+          <div id="top-toolsbar">
+              <xsl:copy-of select="//*[@id='toolsbar']"/>
+          </div>
+          <div id="top-navigation">
+            <div id="top-navigation-inner">
+              <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
+                                                            and @id!='portal-logo'
+                                                            and @id!='portal-searchbox'
+                                                            and @id!='social-viewlet')]"/>
+            </div>
+          </div>
+      </replace>
+
+      <drop css:content="#minisite-search" />
+
+  </rules>
+
+
   <drop css:content="#portal-siteactions" />
+
 
   <replace css:content="#portal-globalnav">
       <nav id="portal-globalnav">
