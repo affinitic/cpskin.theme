@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <browser:page
+        name="isInMinisiteMode"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="isInMinisiteMode"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
+</configure>

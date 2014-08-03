@@ -34,6 +34,7 @@
 
   <!-- Our own rules -->
   <xi:include href="++theme++cpskin.theme.base/rules/header.xml"/>
+  <xi:include href="++theme++cpskin.theme.base/rules/footer.xml"/>
 
   <!-- Copy over the content -->
   <replace css:theme="body" css:content="body" />
