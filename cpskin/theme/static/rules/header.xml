@@ -12,7 +12,7 @@
 
 
   <!-- Header / banner specific to minisite mode -->
-  <rules if="$isInMinisiteMode">
+  <rules if="$isinminisitemode">
 
       <replace css:content-children="#portal-header">
           <div id="top-actions" class="minisite">
@@ -33,7 +33,7 @@
 
 
   <!-- Standard Header / banner -->
-  <rules if-not="$isInMinisiteMode">
+  <rules if-not="$isinminisitemode">
 
       <replace css:content-children="#portal-header">
           <div id="top-actions">

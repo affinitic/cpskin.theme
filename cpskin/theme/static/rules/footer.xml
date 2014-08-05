@@ -2,6 +2,6 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
-  <drop css:content="#footer-sitemap" if="$isInMinisiteMode" />
+  <drop css:content="#footer-sitemap" if="$isinminisitemode" />
 
 </rules>
