@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2 (unreleased)
+0.2 (2014-08-21)
 ----------------
 
 - Handle specific minisite layout for header, banner, breadcrumbs and footer
