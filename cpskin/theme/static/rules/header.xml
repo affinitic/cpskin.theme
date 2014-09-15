@@ -40,6 +40,7 @@
                 <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
                 <xsl:copy-of select="./*[@id='social-viewlet']" />
               </div>
+              <div class="visualClear"></div>
             </div>
           </div>
           <div id="top-search-logo">
