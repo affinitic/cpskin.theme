@@ -4,7 +4,7 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use natural order for portal actions (affinitic #5972)
 
 
 0.2 (2014-08-21)
