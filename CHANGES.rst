@@ -7,6 +7,7 @@ Changelog
 - Use default Plone favicon mechanism (affinitic #5959)
 - Use natural order for portal actions (affinitic #5972)
 - Move social bookmarks icons to top (affinitic #5979)
+- Remove Subject tags from Collection criteria and sort (affinitic #5899)
 - Cleanup Diazo rules
 
 
