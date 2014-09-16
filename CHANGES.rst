@@ -4,8 +4,9 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Use natural order for portal actions (affinitic #5972)
 - Use default Plone favicon mechanism (affinitic #5959)
+- Use natural order for portal actions (affinitic #5972)
+- Move social bookmarks icons to top (affinitic #5979)
 - Cleanup Diazo rules
 
 

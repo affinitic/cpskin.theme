@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <replace css:content-children="#viewlet-above-content-title">
+      <xsl:apply-templates select="./*"/>
+      <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
+  </replace>
+  <drop css:content="#viewlet-below-content-body .sc_social_bookmarks_viewlet" />
 
   <drop css:content="#archetypes-fieldname-subject" />
 
