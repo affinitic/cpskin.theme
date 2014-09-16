@@ -5,6 +5,7 @@ Changelog
 ----------------
 
 - Use natural order for portal actions (affinitic #5972)
+- Use default Plone favicon mechanism (affinitic #5959)
 - Cleanup Diazo rules
 
 

@@ -14,11 +14,11 @@
   <xi:include href="++theme++plone/rules/head/ie-classes.xml"/>
   <xi:include href="++theme++plone/rules/head/base.xml"/>
   <xi:include href="++theme++plone/rules/head/theme.xml"/>
-  <xi:include href="++theme++plone/rules/head/icons.xml"/>
   <xi:include href="++theme++plone/rules/utility/responsify.xml"/>
   <xi:include href="++theme++plone/rules/utility/structures.xml"/>
 
   <!-- Our own rules -->
+  <xi:include href="++theme++cpskin.theme.base/rules/head.xml"/>
   <xi:include href="++theme++cpskin.theme.base/rules/header.xml"/>
   <xi:include href="++theme++cpskin.theme.base/rules/footer.xml"/>
   <xi:include href="++theme++cpskin.theme.base/rules/content.xml"/>
