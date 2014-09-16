@@ -5,6 +5,7 @@ Changelog
 ----------------
 
 - Use natural order for portal actions (affinitic #5972)
+- Cleanup Diazo rules
 
 
 0.2 (2014-08-21)

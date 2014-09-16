@@ -10,26 +10,12 @@
        Tiny, for example. -->
   <theme href="++theme++plone/index.html" css:if-content="#visual-portal-wrapper"/>
 
-  <!-- Head rules
-       ================================================================== -->
+  <!-- Head rules -->
   <xi:include href="++theme++plone/rules/head/ie-classes.xml"/>
   <xi:include href="++theme++plone/rules/head/base.xml"/>
   <xi:include href="++theme++plone/rules/head/theme.xml"/>
   <xi:include href="++theme++plone/rules/head/icons.xml"/>
   <xi:include href="++theme++plone/rules/utility/responsify.xml"/>
-
-  <!-- CSS rules
-       ================================================================== -->
-  <after css:theme-children="head">
-      <link rel="stylesheet" href="/++theme++cpskin.theme.base/css/styles.css"/>
-  </after>
-
-
-  <!-- Body rules
-       ================================================================== -->
-
-  <!-- Change the logo in content and the copy the portal-top children -->
-  <xi:include href="++theme++plone/rules/logo/default-56.xml"/>
   <xi:include href="++theme++plone/rules/utility/structures.xml"/>
 
   <!-- Our own rules -->
