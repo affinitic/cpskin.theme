@@ -15,4 +15,11 @@
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     insert-before="++theme++cpskin.theme.base/css/styles.css" />
 
+ <stylesheet title="CPSkin print"
+    id="++theme++cpskin.theme.base/css/print.css"
+    media="print" rel="stylesheet" rendering="import"
+    cacheable="False" compression="safe" cookable="False"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="++theme++cpskin.theme.base/css/styles.css" />
+
 </object>

@@ -10,4 +10,7 @@
  <stylesheet id="++theme++cpskin.theme.base/css/fontello.css"
              remove="True" />
 
+ <stylesheet id="++theme++cpskin.theme.base/css/print.css"
+             remove="True" />
+
 </object>
