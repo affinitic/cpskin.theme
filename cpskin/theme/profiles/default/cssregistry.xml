@@ -8,18 +8,42 @@
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     insert-before="ploneCustom.css" />
 
+ <stylesheet title="CPSkin mobile styles"
+    id="++theme++cpskin.theme.base/css/mobile.css"
+    media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="++theme++cpskin.theme.base/css/styles.css" />
+
+ <stylesheet title="CPSkin mobile medium styles"
+    id="++theme++cpskin.theme.base/css/mobilemedium.css"
+    media="handheld, screen and (max-device-width: 768px), screen and (max-width: 768px)"
+    rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="++theme++cpskin.theme.base/css/mobile.css" />
+
+ <stylesheet title="CPSkin mobile large styles"
+    id="++theme++cpskin.theme.base/css/mobilelarge.css"
+    media="handheld, screen and (max-device-width: 1024px), screen and (max-width: 1024px)"
+    rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    insert-before="++theme++cpskin.theme.base/css/mobilemedium.css" />
+
  <stylesheet title="CPSkin fonts"
     id="++theme++cpskin.theme.base/css/fontello.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
-    insert-before="++theme++cpskin.theme.base/css/styles.css" />
+    insert-before="++theme++cpskin.theme.base/css/mobilelarge.css" />
 
  <stylesheet title="CPSkin print"
     id="++theme++cpskin.theme.base/css/print.css"
     media="print" rel="stylesheet" rendering="import"
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
-    insert-before="++theme++cpskin.theme.base/css/styles.css" />
+    insert-before="++theme++cpskin.theme.base/css/fontello.css" />
 
 </object>
