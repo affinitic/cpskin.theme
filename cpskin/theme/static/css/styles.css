@@ -94,11 +94,11 @@ h4 {
 /* --- hamburger navigation mobile --- */
 @font-face {
     font-family: 'mglabs';
-    src: url('/fonts/mglabs.eot');
-    src: url('/fonts/mglabs.eot'),
-          url('/fonts/mglabs.woff'),
-          url('/fonts/mglabs.ttf'),
-          url('/fonts/mglabs.svg');
+    src: url('../font/mglabs.eot');
+    src: url('../font/mglabs.eot'),
+          url('../font/mglabs.woff'),
+          url('../font/mglabs.ttf'),
+          url('../font/mglabs.svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -262,7 +262,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 #portal-searchbox .LSBox .searchButton {
     background-color: transparent;
-    background-image: url("searchbt2.png");
+    background-image: url("../images/searchbt.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto auto;
@@ -398,11 +398,11 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 }
 
 #siteaction-en{
-    background:url("site-en.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background:url("../images/site-en.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #siteaction-nl{
-    background:url("site-nl.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background:url("../images/site-nl.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 /* --- fin top actions --- */
@@ -1014,10 +1014,6 @@ div.width-1\:2 {
     padding:0.3em 0 0.3em 2.4em;
 }
 
-.geolocalisation {
-    background: url("/ckeditortemplates/images/geolocalisation.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
 .adresse, .telephone, .mail, .homme, .femme, .fax, .horaire, .lien {
     margin-bottom:0em !important;/*A remplacer dans la css du produit*/
 }
@@ -1027,7 +1023,7 @@ div.width-1\:2 {
 }
 
 .horaire {
-    background: url("/ckeditortemplates/images/horloge.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/horloge.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     margin: 0.1em;
     padding: 0 0 0.8em 2.4em;
 }
@@ -1212,7 +1208,6 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 /* --- Portlets mini-site --- */
 
 #portlet-minisite {
-    background-image: url("/Ath-mini-site.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 60% auto;
@@ -1493,7 +1488,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 }
 
 #media{
-    background-image:url("media-bg.gif");
+    background-image:url("../images/media-bg.gif");
     background-size: 100% auto;
     background-repeat:repeat-y;
 }
@@ -1686,7 +1681,7 @@ div.width-1\:2 .videos-container{
 }
 
 .sticky-results .bloc-item h3 {
-    background-image: url("bookmark.png");
+    background-image: url("../images/bookmark.png");
     background-position: 10px top;
     background-size: 13px auto;
     background-repeat: no-repeat;
