@@ -6,6 +6,7 @@
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="ploneCustom.css" />
 
  <stylesheet title="CPSkin mobile styles"
@@ -14,6 +15,7 @@
     rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="++theme++cpskin.theme.base/css/styles.css" />
 
  <stylesheet title="CPSkin mobile medium styles"
@@ -22,6 +24,7 @@
     rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="++theme++cpskin.theme.base/css/mobile.css" />
 
  <stylesheet title="CPSkin mobile large styles"
@@ -30,6 +33,7 @@
     rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="++theme++cpskin.theme.base/css/mobilemedium.css" />
 
  <stylesheet title="CPSkin fonts"
@@ -37,6 +41,7 @@
     media="screen" rel="stylesheet" rendering="import"
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="++theme++cpskin.theme.base/css/mobilelarge.css" />
 
  <stylesheet title="CPSkin print"
@@ -44,6 +49,7 @@
     media="print" rel="stylesheet" rendering="import"
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True"
     insert-before="++theme++cpskin.theme.base/css/fontello.css" />
     
  <stylesheet title="Google font Open Sans"
