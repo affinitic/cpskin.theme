@@ -42,7 +42,8 @@ setup(name='cpskin.theme',
           'plone.app.theming',
           'diazotheme.frameworks',
           'cpskin.core',
-          'cpskin.locales'
+          'cpskin.locales',
+          'z3c.jbot'
           # -*- Extra requirements: -*-
       ],
       extras_require=dict(
