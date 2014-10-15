@@ -11,4 +11,13 @@
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
+    <browser:page
+        name="currentTheme"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="getCurrentTheme"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
 </configure>
