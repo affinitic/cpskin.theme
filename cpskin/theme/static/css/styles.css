@@ -197,7 +197,7 @@ div.position-0 {
     margin-right: 2px;
 }
 
-#cpskin-banner, #cpskin-banner img {
+#portal-top #cpskin-banner, #portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
 }
@@ -1062,7 +1062,7 @@ div.width-1\:2 .evenements li.bloc-item a img {
 }
 
 li.bloc-item a h3 {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 li.bloc-item .documentByLine{
@@ -1691,7 +1691,7 @@ div.width-1\:2 .videos-container{
 }
 
 .bloc-item h3{
-    line-height: 1.2em;
+    line-height: 1.1em;
 }
 
 .voir-tout span {
