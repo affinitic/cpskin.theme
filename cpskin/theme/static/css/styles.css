@@ -428,6 +428,10 @@ dl.portlet ul.navTree .navTreeCurrentItem{
     padding:0.73em 0.75em 0.69em ;
 }
 
+#portal-globalnav #portaltab-index_html a:after{
+    content:"";
+}
+
 #portaltab-index_html.selected a, #portaltab-index_html.selected a:hover, #portaltab-index_html a:hover {
     background-color:white;
 }
