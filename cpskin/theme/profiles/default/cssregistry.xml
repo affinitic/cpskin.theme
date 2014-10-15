@@ -7,7 +7,7 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="ploneCustom.css" />
+    insert-after="++resource++cpskin.core.banner.css" />
 
  <stylesheet title="CPSkin mobile styles"
     id="++theme++cpskin.theme.base/css/mobile.css"
@@ -16,7 +16,7 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="++theme++cpskin.theme.base/css/styles.css" />
+    insert-after="++theme++cpskin.theme.base/css/styles.css" />
 
  <stylesheet title="CPSkin mobile medium styles"
     id="++theme++cpskin.theme.base/css/mobilemedium.css"
@@ -25,7 +25,7 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="++theme++cpskin.theme.base/css/mobile.css" />
+    insert-after="++theme++cpskin.theme.base/css/mobile.css" />
 
  <stylesheet title="CPSkin mobile large styles"
     id="++theme++cpskin.theme.base/css/mobilelarge.css"
@@ -34,7 +34,7 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="++theme++cpskin.theme.base/css/mobilemedium.css" />
+    insert-after="++theme++cpskin.theme.base/css/mobilemedium.css" />
 
  <stylesheet title="CPSkin fonts"
     id="++theme++cpskin.theme.base/css/fontello.css"
@@ -42,7 +42,7 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="++theme++cpskin.theme.base/css/mobilelarge.css" />
+    insert-after="++theme++cpskin.theme.base/css/mobilelarge.css" />
 
  <stylesheet title="CPSkin print"
     id="++theme++cpskin.theme.base/css/print.css"
@@ -50,13 +50,13 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="True"
-    insert-before="++theme++cpskin.theme.base/css/fontello.css" />
+    insert-after="++theme++cpskin.theme.base/css/fontello.css" />
     
  <stylesheet title="Google font Open Sans"
     id="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700"
     media="all" rel="stylesheet" rendering="link"
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
-    insert-before="++theme++cpskin.theme.base/css/print.css" />
+    insert-after="++theme++cpskin.theme.base/css/print.css" />
 
 </object>
