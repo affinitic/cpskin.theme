@@ -327,6 +327,15 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-right: 5px;
 }
 
+/* See fontello.css */
+#content .sc_social_bookmarks li a.icon-Facebook:before{
+    content: '\e80f';
+}
+
+#content .sc_social_bookmarks li a.icon-Twitter:before{
+    content: '\e814';
+}
+
 .section-notheme #top-actions{
     background-color:grey;
 }
@@ -417,6 +426,10 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 
 #portal-globalnav #portaltab-index_html a {
     padding:0.73em 0.75em 0.69em ;
+}
+
+#portal-globalnav #portaltab-index_html a:after{
+    content:"";
 }
 
 #portaltab-index_html.selected a, #portaltab-index_html.selected a:hover, #portaltab-index_html a:hover {
