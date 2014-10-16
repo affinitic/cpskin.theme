@@ -335,6 +335,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-right: 5px;
 }
 
+#content .sc_social_bookmarks li a img{
+    display: none;
+}
+
 /* See fontello.css */
 #content .sc_social_bookmarks li a.icon-Facebook:before{
     content: '\e80f';
