@@ -205,7 +205,7 @@ div.position-0 {
     content: '\e814';
 }
 
-#cpskin-banner, #cpskin-banner img {
+#portal-top #cpskin-banner, #portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
 }
@@ -333,10 +333,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 #content .sc_social_bookmarks li{
     margin-right: 5px;
-}
-
-#content .sc_social_bookmarks li a img{
-    display: none;
 }
 
 /* See fontello.css */
