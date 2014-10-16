@@ -388,23 +388,15 @@ dl.portlet ul.navTree .navTreeCurrentItem{
     background-color: #f9f9f9;
 }
 
-#portal-siteactions li{
+#siteaction-en,#siteaction-nl,#siteaction-de {
+    font-size: 80%;
+}
+
+#portal-header #portal-siteactions #siteaction-en a,#portal-header #portal-siteactions #siteaction-nl a,
+#portal-header #portal-siteactions #siteaction-de a  {
+    color: transparent;
     display: inline-block;
-    margin-top: 0.4em;
-    height: 13px;
     width: 20px;
-}
-
-#portal-header #portal-siteactions li a{
-    color:transparent;
-    display: block;
-    height: 13px;
-    width: 20px;
-}
-
-
-#portal-header #portal-siteactions li a:hover{
-    color:transparent;
 }
 
 #siteaction-en{
@@ -413,6 +405,10 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 
 #siteaction-nl{
     background:url("../images/site-nl.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#siteaction-de{
+    background:url("../images/site-de.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 /* --- fin top actions --- */
