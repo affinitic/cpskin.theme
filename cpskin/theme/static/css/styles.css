@@ -197,6 +197,14 @@ div.position-0 {
     margin-right: 2px;
 }
 
+.iconifiedDocumentActions a img{
+    display: none;
+}
+
+#content .iconifiedDocumentActions li a.icon-print:before{
+    content: '\e814';
+}
+
 #portal-top #cpskin-banner, #portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
@@ -325,6 +333,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 #content .sc_social_bookmarks li{
     margin-right: 5px;
+}
+
+#content .sc_social_bookmarks li a img{
+    display: none;
 }
 
 /* See fontello.css */
@@ -1029,7 +1041,7 @@ div.width-1\:2 {
 }
 
 .coordonnees,.horaire{
-    width:46%;
+    width:47%;
 }
 
 .horaire {
@@ -1071,7 +1083,7 @@ div.width-1\:2 .evenements li.bloc-item a img {
 }
 
 li.bloc-item a h3 {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 li.bloc-item .documentByLine{
@@ -1700,7 +1712,7 @@ div.width-1\:2 .videos-container{
 }
 
 .bloc-item h3{
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 
 .voir-tout span {
