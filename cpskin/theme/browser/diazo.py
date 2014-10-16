@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 from Products.Five.browser import BrowserView
 
+from plone.app.theming.utils import getCurrentTheme
+
+
 HAS_MINISITE = False
 try:
     from cpskin.minisite.interfaces import IInMinisite
@@ -28,3 +31,6 @@ class DiazoView(BrowserView):
             return False
         request = self.request
         return IInPortal.providedBy(request)
+
+    def getCurrentTheme(self):
+        return getCurrentTheme()

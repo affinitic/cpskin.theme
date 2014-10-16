@@ -4,7 +4,9 @@ Changelog
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add method to get current theme (affinitic #6038)
+- Add CSS files taken out custom
+- Minor fixes
 
 
 0.3 (2014-10-07)
