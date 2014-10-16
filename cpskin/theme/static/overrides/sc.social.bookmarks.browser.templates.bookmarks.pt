@@ -16,6 +16,10 @@
 
         <a href="" tal:attributes="href provider/url;
              class string:icon-${provider/id};">
+          <img src=""
+               tal:attributes="src string:${portal_url}/++resource++sb_images/${provider/logo};
+               alt string:${provider/id};
+               title string:${provider/id};" />
           <span class="bookmark_id"
                 tal:condition="not:icons_only"
                 tal:content="provider/id">BOOKM</span>
