@@ -596,7 +596,7 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
 }
 
 .sf-menu .direct_access li a:before{ 
-    content: "\e80d";
+    content: "\e807";
     font-family: "fontello";
     padding-right:0.25em;
 }

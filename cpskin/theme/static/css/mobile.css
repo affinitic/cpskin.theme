@@ -207,9 +207,8 @@ div.overlay-ajax {
 
 
 /*Portlet*/
-
-.portletContent #icone {
-    max-width: 57%;
+.portletStaticText{
+	clear:both;
 }
 
 /*Footer*/
