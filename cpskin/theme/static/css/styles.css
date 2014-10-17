@@ -951,6 +951,10 @@ div.width-1\:2 {
 
 /*.section-notheme .bloc-item:nth-child(-n+4) a, .section-notheme .bloc-item:nth-child(-n+4) .documentByLine*/
 
+.bigimage.bloc-item {
+    max-height: 268px;
+}
+
 .bigimage a, .bigimage .documentByLine {
     clear: both;
     float: left;
@@ -1091,6 +1095,10 @@ div.width-1\:2 .evenements li.bloc-item a img {
     margin-bottom: 0.25em;
 }
 
+.bloc-item h3{
+    line-height: 1.1em;
+}
+
 li.bloc-item a h3 {
     font-size: 18px;
 }
@@ -1098,6 +1106,7 @@ li.bloc-item a h3 {
 li.bloc-item .documentByLine{
     font-size:14px;
     color:grey;
+    font-family:arial;
 }
 
 div.width-1\:2 li.bloc-item{
@@ -1540,6 +1549,11 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     width: 66%;
 }
 
+.albums-container .link-all {
+    position: relative;
+    right: 5%;
+}
+
 .videos-container {
     padding-left: 6%;
     float: left;
@@ -1710,7 +1724,6 @@ div.width-1\:2 .videos-container{
 .results {
     background-color: #eaeaea;
     float: left;
-    margin-top: -1px;
     width: 100%;
 }
 
@@ -1735,18 +1748,17 @@ div.width-1\:2 .videos-container{
     z-index: 0;
 }
 
-.bloc-item h3{
-    line-height: 1.2em;
-}
-
-.voir-tout span {
-    text-transform: none;
-}
-
 .voir-tout{
     text-transform: lowercase;
     float:right;
     border-bottom:0px solid white !important;
+    position: relative;
+    top: -3px;
+    right:4px;
+}
+
+.voir-tout span {
+    text-transform: none;
 }
 
 .myimageleft {
