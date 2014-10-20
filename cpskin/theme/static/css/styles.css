@@ -332,7 +332,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 #content #viewlet-above-content-title ul li a {
-    border-radius: 8px;
     float: left;
     font-size: 16px;
     padding: 4px 2px;
@@ -480,9 +479,9 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 /* --- ajout menu dynamique --- */
 
 .portal-globalnav-cpskinmenu a:hover, .portal-globalnav-cpskinmenu-tabs a:hover{
-border-radius:5px;
-background-color:white;
-color:black;
+	border-radius:5px;
+	background-color:white;
+	color:black;
 }
 
 ul.navTreeLevel0 li a {
