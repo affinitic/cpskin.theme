@@ -193,14 +193,6 @@ div.position-0 {
     margin-left: -100%;
 }
 
-.iconifiedDocumentActions a {
-    margin-right: 2px;
-}
-
-.iconifiedDocumentActions a img{
-    display: none;
-}
-
 #portal-top #cpskin-banner, #portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
@@ -326,28 +318,44 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     padding:0px;
 }
 
-#content .sc_social_bookmarks ul.icons_only li{
-    width: 20px;
-}
-
 #content .sc_social_bookmarks li a img{
     display: none;
 }
 
 /* See fontello.css */
 
-#viewlet-above-content-title a:before{
-    color:#cd3301;
+#content #viewlet-above-content-title ul li {
+    float: left;
+    height: auto;
+    margin-right: 3px;
+    width: auto;
+}
+
+#content #viewlet-above-content-title ul li a {
+    border-radius: 8px;
+    float: left;
+    font-size: 16px;
+    padding: 4px 2px;
+}
+    
+#content #viewlet-above-content-title ul li a:before{ 
+    color:grey;
+}
+
+#viewlet-above-content-title .iconifiedDocumentActions{
+margin:0;
+}
+
+.iconifiedDocumentActions a img{
+    display: none;
 }
 
 #content .sc_social_bookmarks li a.icon-Facebook:before{
     content: "\e809";
-    font-size: 110%;
 }
 
 #content .sc_social_bookmarks li a.icon-Twitter:before{
     content: "\e80e";
-    font-size: 122%
 }
 
 .icon-sendtomanager:before {
