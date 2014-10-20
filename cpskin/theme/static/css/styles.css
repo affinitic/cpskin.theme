@@ -239,7 +239,8 @@ div.position-0 {
 .LSBox:after {
     color: #adadad;
     content: "\e828";
-    font-size: 171%;
+    font-size: 130%;
+    font-family:fontello;
     margin-left: -40px;
 }
 
