@@ -12,26 +12,6 @@ padding-top:1em;
     color: #333;
 }
 
-/*>>> FIN breadcrumbs a supprimer lorsque la modifie sera apportée <<< */
-
-/* >>> STYLES GENERAUX <<< */
-
-
-/*#visual-portal-wrapper #portal-columns #portal-column-content #content #viewlet-above-content-title .iconifiedDocumentActions li, #viewlet-above-content-title .sc_social_bookmarks ul.icons_only li{
-display:block !important;
-}
-
-.sc_social_bookmarks_wrapper{
-padding:0;
-}
-
-
-#viewlet-above-content-title img{
-width:20px;
-height:20px;
-}
-*/
-
 .iconifiedDocumentActions, #viewlet-above-content-title .iconifiedDocumentActions ul{
 margin:0;
 }
@@ -1617,6 +1597,13 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     clear:both;
 }
 
+#multimediaviewlet .link-all:after {
+    content: "➟";
+    font-size: 1.5em;
+    position: relative;
+    top: 3px;
+}
+
 div.width-1\:2 .album-3, div.width-1\:2 .album-4 {
     display: none;
 }
@@ -1767,6 +1754,13 @@ div.width-1\:2 .videos-container{
 
 .voir-tout span {
     text-transform: none;
+}
+
+.voir-tout:after {
+    content: "➟";
+    font-size: 1.5em;
+    position: relative;
+    top: 2px;
 }
 
 .myimageleft {
