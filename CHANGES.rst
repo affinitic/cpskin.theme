@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4 (unreleased)
+0.4 (2014-10-22)
 ----------------
 
 - Add method to get current theme (affinitic #6038)
