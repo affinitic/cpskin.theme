@@ -221,7 +221,11 @@ div.position-0 {
     content: "\e828";
     font-size: 130%;
     font-family:fontello;
-    margin-left: -40px;
+    display: inline-block;
+    font-family: fontello;
+    font-size: 130%;
+    margin-left: 10px;
+    width: 30px;
 }
 
 .LSBox #searchGadget {
@@ -250,10 +254,13 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     border: 0 solid lightgrey;
     color: transparent;
     cursor: pointer;
-    height: 38px;
-    margin-left: -40px;
-    opacity: 0.5;
-    width: 40px;
+    float: right;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+    position: absolute;
+    width: 43px;
 }
 
 .LSBox .searchSection {
@@ -940,7 +947,7 @@ div.width-1\:2 {
 /*.section-notheme .bloc-item:nth-child(-n+4) a, .section-notheme .bloc-item:nth-child(-n+4) .documentByLine*/
 
 .bigimage.bloc-item {
-    max-height: 268px;
+    max-height: 279px;
 }
 
 .bigimage a, .bigimage .documentByLine {
@@ -949,13 +956,25 @@ div.width-1\:2 {
     width: 100%;
 }
 
+.bigimage:nth-child(2), .bigimage:nth-child(4) {
+    padding-left: 1%;
+    padding-right: 0;
+}
+
+
 /*.section-notheme .bloc-item:nth-child(-n+4) img */
 .bigimage a img{
     display: block;
     height: auto;
     max-height: none;
-    max-width: 98%;
+    max-width: 100%;
     width: 100%;
+}
+
+/*permet de selectionner les élément paire d'un liste*/
+.bigimage:nth-child(2n), .bloc-item:nth-child(2n) {
+    padding-left: 1%;
+    padding-right: 0;
 }
 
 #content div.newsImageContainer {
@@ -1089,6 +1108,7 @@ div.width-1\:2 .evenements li.bloc-item a img {
 
 li.bloc-item a h3 {
     font-size: 18px;
+    padding-right: 1%;
 }
 
 li.bloc-item .documentByLine{
@@ -1533,7 +1553,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 
 .albums-container {
     float: left;
-    padding-left: 2%;
+    padding-left: 0%;
     width: 66%;
 }
 
@@ -1679,7 +1699,6 @@ div.width-1\:2 .videos-container{
 
 .titre-rss a {
     float: left;
-    margin-left: 1.5em;
 }
 
 .bloc-rss img {
@@ -1695,6 +1714,7 @@ div.width-1\:2 .videos-container{
     font-family: fontello;
     font-size: 126%;
     margin-top: 2.5em;
+    margin-left:1em
 }
 
 #accueil #media h3{
@@ -1703,17 +1723,17 @@ div.width-1\:2 .videos-container{
 
 .bloc-item{
     float: left;
-    list-style: none outside none;
+    list-style: outside none none;
     max-height: 111px;
     min-height: 60px;
     overflow: hidden;
-    padding: 1% 0.5%;
-    width: 48%;
+    padding: 1% 1% 1% 0;
+    width: 49%;
 }
 
 #content .results ul {
     margin-bottom: 0;
-    margin-left: 1em;
+    margin-left: 0;
 }
 
 .results {
