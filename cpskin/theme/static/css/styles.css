@@ -236,6 +236,7 @@ div.position-0 {
     padding-left: 0.5em;
     padding-right: 40px;
     width: 13em;
+    border:none;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
@@ -275,6 +276,14 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 .LSBox #LSResult {
     background: none repeat scroll 0 0 transparent;
+}
+
+.LSRow a:hover {
+    text-decoration: underline;
+}
+
+.LSRow a {
+    display: block;
 }
 
 #LSResult fieldset {
@@ -460,8 +469,8 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 }
 
 .selected .icon-home:before, .selected a:hover.icon-home:before, .plain a:hover .icon-home:before,.plain a .icon-home:before{
-    font-size: 24px;
     text-decoration: none;
+    font-size:1.5em;
 }
 
 /* --- ajout menu dynamique --- */
