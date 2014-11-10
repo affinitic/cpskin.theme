@@ -4,8 +4,8 @@
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
   <replace css:content-children="#viewlet-above-content-title">
-      <xsl:apply-templates select="./*"/>
       <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
+      <xsl:apply-templates select="./*[@class!='visualClear']"/>
   </replace>
   <drop css:content="#viewlet-below-content-body .sc_social_bookmarks_viewlet" />
 

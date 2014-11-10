@@ -315,7 +315,7 @@ dl.actionMenu.activated dt a{
 }
 
 .sc_social_bookmarks_viewlet {
-    float: right;
+    float: left;
 }
 
 .sc_social_bookmarks_wrapper {
@@ -346,7 +346,12 @@ dl.actionMenu.activated dt a{
     color:grey;
 }
 
+#viewlet-above-content-title {
+float:right;
+}
+
 #viewlet-above-content-title .iconifiedDocumentActions{
+float:left;
 margin:0;
 }
 
