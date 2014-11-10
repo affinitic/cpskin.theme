@@ -4,7 +4,8 @@ Changelog
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix natural order for viewlet-above-content-title (affinitic #6062)
+- Change Diazo rules for more adaptability (affinitic #6062)
 
 
 0.4 (2014-10-22)
