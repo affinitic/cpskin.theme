@@ -242,7 +242,7 @@ div.position-0 {
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     background-color: #fff;
     border-color: lightgray !important;
-    box-shadow: 0 0 11px lightgray;
+    box-shadow: -6px 0 6px #e2e2e2;
 }
 
 .LSBox input.searchField {
