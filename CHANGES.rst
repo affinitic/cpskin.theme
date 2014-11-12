@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.5 (unreleased)
-----------------
+0.4.1 (2014-11-12)
+------------------
 
 - Fix natural orders (affinitic #6062)
 - Change Diazo rules for more adaptability (affinitic #6062)
