@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.3 (unreleased)
+0.4.3 (2014-11-18)
 ------------------
 
 - changement position hearder
