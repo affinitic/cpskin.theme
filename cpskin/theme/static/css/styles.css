@@ -104,6 +104,10 @@ h4 {
     float: left;
 }
 
+.advb-submenu ul li{
+padding-left:10px;
+}
+
 .advb-submenu{
     float:left;
     clear:both;
@@ -115,8 +119,15 @@ h4 {
 
 .advb-submenu ul li:before {
     content: "•";
-    margin-left: -10px;
-    padding-right: 3px;
+    float: left;
+    margin-left: -12px;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+#advanced-breadcrumbs .nofollow:after {
+    content: "»";
+    padding-left: 0.25em;
 }
 
 #mobnav-btn {
@@ -124,9 +135,10 @@ h4 {
     background-color: #404040;
 }
 
-.advb-title {
+.advb-submenu .advb-title {
     padding: 3px 7px 3px 4px;
-    background-color: #404040;
+    background-color: #205c90;
+    float:left;
 }
 
 div#mobile-first-level-wrapper {
@@ -937,9 +949,9 @@ padding-left:0;
 
 /* >>> FIN FACETED <<< */
 
-#advanced-breadcrumbs .advb-submenu {
+/*#advanced-breadcrumbs .advb-submenu {
     padding-bottom: 3px;
-}
+}*/
 
 /* >>> CONTENT <<< */
 
