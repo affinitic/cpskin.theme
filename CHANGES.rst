@@ -4,19 +4,21 @@ Changelog
 0.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove more elements from printed output
 
 
 0.4.3 (2014-11-18)
 ------------------
 
-- changement position hearder
+- Change header position
+- Minor improvements
+- CSS cleanup
 
 
 0.4.2 (2014-11-12)
 ------------------
 
-- Nothing changed yet.
+- CSS changes
 
 
 0.4.1 (2014-11-12)

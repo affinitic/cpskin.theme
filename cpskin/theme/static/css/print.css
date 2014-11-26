@@ -1,5 +1,12 @@
 #portal-header,
+#cpskin-banner,
+#edit-bar,
+#flex,
 #portal-footer-wrapper,
-#viewlet-above-content-title{
+#viewlet-above-content-title,
+#viewlet-below-content-title,
+#viewlet-below-content,
+#portal-column-one,
+#portal-column-two {
     display: none;
 }
