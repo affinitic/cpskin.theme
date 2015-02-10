@@ -4,6 +4,7 @@ Changelog
 0.4.4 (unreleased)
 ------------------
 
+- Move Language selector to the top bar (#10069)
 - Remove more elements from printed output
 
 
