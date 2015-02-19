@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.4 (unreleased)
+0.4.4 (2015-02-19)
 ------------------
 
 - Move Language selector to the top bar (#10069)
