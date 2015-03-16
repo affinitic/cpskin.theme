@@ -191,7 +191,6 @@ div.position-0 {
 }
 
 #portal-header #navWrapper {
-    max-height:48px;
     background-color: #ECEAEB;
     margin: 0;
 }
@@ -472,7 +471,7 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 /* --- cpskin menu --- */
 
 #portal-globalnav #portaltab-index_html a {
-    padding:0.73em 0.75em 0.69em ;
+    padding:0.75em 1em ;
 }
 
 #portal-globalnav #portaltab-index_html a:after{
@@ -483,7 +482,7 @@ dl.portlet ul.navTree .navTreeCurrentItem{
     background-color:white;
 }
 
-.plain .icon-home:before {
+/*.plain .icon-home:before {
     color: white;
     content: "\e811";
     font-size:1.5em;
@@ -497,6 +496,28 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 .selected .icon-home:before, .selected a:hover.icon-home:before, .plain a:hover .icon-home:before,.plain a .icon-home:before{
     text-decoration: none;
     font-size:1.5em;
+}*/
+
+.icon-home{
+display:none;
+}
+
+#portal-globalnav #portaltab-index_html.selected a{
+    text-decoration:none;
+}
+
+#portal-globalnav #portaltab-index_html a:before {
+    color: black;
+    content: "";
+    font-family: fontello;
+    font-size: 130%;
+    padding-left:2px;
+    padding-right:2px;
+    text-decoration:none;
+}
+
+#portal-globalnav #portaltab-index_html.selected a:before, #portal-globalnav #portaltab-index_html.plain a:hover:before{
+    color:white;
 }
 
 /* --- ajout menu dynamique --- */
@@ -560,9 +581,23 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
     font-size: 130%;
     margin-right: 0.5em;
     min-width: 0;
-    padding: 1em 1.5em 0.75em;
+    padding: 0.75em 1.5em 0.75em;
     float:left;
 }
+
+#navWrapper #portal-globalnav #portaltab-je-suis a, #navWrapper #portal-globalnav #portaltab-je-trouve a,
+#navWrapper #portal-globalnav #portaltab-je-suis .selected a, #navWrapper #portal-globalnav #portaltab-je-trouve .selected a { 	 	
+	background-color: #f4f4f4; 	 	
+}
+
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover, #navWrapper #portal-globalnav #portaltab-je-trouve a:hover{ 	 	
+	background-color:#317D9B; 	 	
+} 	 	
+		 	
+#navWrapper #portal-globalnav #portaltab-je-suis .activated, #navWrapper #portal-globalnav #portaltab-je-trouve .activated{ 	 	
+	background-color: #317D9B; 	 	
+	color: #ffffff; 	 	
+} 
 
 .theme1, .theme2, .theme3{
     text-transform: uppercase;
@@ -1792,6 +1827,9 @@ iframe .player .title{
 
 /* >>> FIN VUE EVENTS <<<  */
 
+.diagnosis {
+    height: 1em;
+}
 
 /* >>> FOOTER <<< */
 
