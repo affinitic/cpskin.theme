@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.5 (unreleased)
+0.4.5 (2015-03-19)
 ------------------
 
 - Fix randomly broken html (no head, ...)
