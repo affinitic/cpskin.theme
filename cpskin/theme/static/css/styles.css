@@ -5,7 +5,7 @@
 }
 
 #portal-columns{
-padding-top:1em;
+	padding-top:1em;
 }
 
 #content-core {
@@ -648,12 +648,6 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
     display: none;
 }
 
-/*#portal-globalnav.inactive {
-    max-width: 1200px;
-    position: relative !important;
-    visibility: visible !important;
-}*/
-
 /* --- Fin correctif temporaire affichage si tools sans float --- */
 
 #portal-globalnav-cpskinmenu .direct_access li a{
@@ -997,10 +991,16 @@ div.width-1\:2 {
 #portal-columns {
     clear: both;
     float: none;
-    height: 200px;
+    height: auto;
     margin: 0 auto;
     max-width: 1200px;
     padding-top:0.75em;
+}
+
+#portal-columns:after {
+  clear: both;
+  display: block;
+  content: "";
 }
 
 #portal-column-content #portal-breadcrumbs {
