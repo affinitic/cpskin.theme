@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.4.5 (unreleased)
+0.4.6 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+0.4.5 (2015-03-19)
+------------------
+
+- Fix randomly broken html (no head, ...)
+  See details in http://trac.imio.be/trac/ticket/10615
 
 
 0.4.4 (2015-02-19)
