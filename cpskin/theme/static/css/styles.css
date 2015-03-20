@@ -482,22 +482,6 @@ dl.portlet ul.navTree .navTreeCurrentItem{
     background-color:white;
 }
 
-/*.plain .icon-home:before {
-    color: white;
-    content: "\e811";
-    font-size:1.5em;
-}
-
-.selected .icon-home:before,.plain a:hover .icon-home:before{
-    color: grey;
-    content: "\e811";
-}
-
-.selected .icon-home:before, .selected a:hover.icon-home:before, .plain a:hover .icon-home:before,.plain a .icon-home:before{
-    text-decoration: none;
-    font-size:1.5em;
-}*/
-
 .icon-home{
 display:none;
 }
@@ -761,7 +745,7 @@ ul.navTreeLevel0 {
 /* --- portlet navigation --- */
 
 #portal-columns  dl.portletNavigationTree dd.portletItem{
-padding-left:0;
+	padding-left:0;
 }
 
 .icons-on #portal-column-one .portletNavigationTree dd ul li a {
