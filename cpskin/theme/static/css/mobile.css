@@ -45,6 +45,24 @@
 	font-size: 100% !important;
 }
 
+#LSResult fieldset{
+	margin:0 !important;
+}
+
+.LSRow, #LSNothingFound {
+    width: auto;
+}
+
+#visual-portal-wrapper #LSResult {
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+#portal-searchbox .LSBox {
+    width: 100%;
+}
+
 #content-views a {
 	font-size: 150%;
 	line-height: 2em !important;
