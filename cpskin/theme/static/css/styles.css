@@ -483,7 +483,7 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 }
 
 .icon-home{
-display:none;
+	display:none;
 }
 
 #portal-globalnav #portaltab-index_html.selected a{
@@ -491,7 +491,7 @@ display:none;
 }
 
 #portal-globalnav #portaltab-index_html a:before {
-    color: black;
+    color: #ffffff;
     content: "";
     font-family: fontello;
     font-size: 130%;
@@ -501,7 +501,7 @@ display:none;
 }
 
 #portal-globalnav #portaltab-index_html.selected a:before, #portal-globalnav #portaltab-index_html.plain a:hover:before{
-    color:white;
+    color:#2d2d2d;
 }
 
 /* --- ajout menu dynamique --- */
@@ -565,7 +565,7 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
     font-size: 130%;
     margin-right: 0.5em;
     min-width: 0;
-    padding: 0.75em 1.5em 0.75em;
+    padding: 0.77em 1.5em;
     float:left;
 }
 
