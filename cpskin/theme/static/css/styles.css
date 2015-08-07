@@ -1,9 +1,5 @@
 /* >>> breadcrumbs a supprimer lorsque la modifie sera apportée <<< */
 
-.section-notheme #portal-breadcrumbs {
-    display: none;
-}
-
 #portal-columns{
 	padding-top:1em;
 }
