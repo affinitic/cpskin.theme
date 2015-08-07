@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.8 (unreleased)
+0.4.8 (2015-08-07)
 ------------------
 
 - Remove .section-notheme #portal-breadcrumbs {display: none;}. Indeed, this code is now imported into homepage template directly.
