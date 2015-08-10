@@ -7,7 +7,7 @@
     <browser:jbot directory="static/overrides" />
     <include package="plone.app.theming" />
     <include package="diazotheme.frameworks" />
-    <include package="cpskin.core" />
+    <include package="cpskin.core" file="meta.zcml" />
     <include package="cpskin.locales" />
 
     <include package=".browser" />
